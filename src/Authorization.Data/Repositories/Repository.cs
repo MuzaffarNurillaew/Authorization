@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 
 namespace Authorization.Data.Repositories
 {
-    internal class Repository<T> : IRepository<T> where T : Auditable
+    public class Repository<T> : IRepository<T> where T : Auditable
     {
         private readonly AuthorizationDbContext context;
         private readonly DbSet<T> dbSet;

@@ -12,7 +12,7 @@ namespace Authorization.Domain.Commons
         public long? UpdatedBy { get; set; }
         public long? DeletedBy { get; set; }
 
-        public ModelState State { get; set; }
+        public ModelState State { get; set; } = ModelState.Created;
 
     }
 }
